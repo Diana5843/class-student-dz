@@ -17,7 +17,9 @@ class User{
         this.year = year;
     }
     set name(newName){
-        if(typeof newName !== 'string'){
+        if(typeof newName !== 'stri
+        if(courseStudent > 5){
+            не удалось отправить некоторые ссылки в «https://github.com/Diana5843/class-student-dz.git»ng'){
             throw new TypeError('Error type');
         }
         this._name = newName;
@@ -55,7 +57,6 @@ class User{
         const date1 = new Date().getFullYear();
         const courseStudent = date1 - this.year;
         if(courseStudent > 5){
-            не удалось отправить некоторые ссылки в «https://github.com/Diana5843/class-student-dz.git»
             throw new TypeError('Студент еще не поступил.');
         }
         return `Студент учится на ${courseStudent} курсе.`;
